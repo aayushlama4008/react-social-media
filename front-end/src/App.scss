@@ -1,0 +1,9 @@
+.app{
+    font-family: var(--font-base);
+    background-color: var(--white-color);
+}
+.grid-center{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

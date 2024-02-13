@@ -1,0 +1,107 @@
+.login {
+  height: 100vh;
+  width: 100%;
+  // background-color: rgba(0, 35, 232, 0.653);
+  background-color: var(--primary-color);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  background-color: var(--white-color);
+  height: 350px;
+  border-radius: 20px;
+  color: var(--white-color);
+
+  .left--container {
+    background: linear-gradient(
+        to bottom,
+        rgba(13, 39, 232, 0.21),
+        rgba(15, 40, 160, 0.687)
+      ),
+      url("../../assests/login.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 30px;
+
+    h1 {
+      font-size: 100px;
+      font-weight: 900;
+      font-family: var(--font-title);
+    }
+    button {
+      width: 200px;
+      height: 30px;
+      background-color: var(--white-color);
+      color: var(--primary-color);
+      font-weight: 400;
+      font-family: var(--font-title);
+      outline: none;
+      border: none;
+      cursor: pointer;
+      border-radius: 20px;
+    }
+  }
+  .login--detail {
+    padding: 20px;
+    min-height: 350px;
+    h1 {
+      color: var(--secondary-color);
+      font-family: var(--font-title);
+      display: grid;
+      justify-content: center;
+    }
+    form {
+      display: grid;
+      gap: 15px;
+      padding: 20px;
+
+      input {
+        background-color: rgba(232, 232, 232, 0.719);
+        outline: none;
+        border: none;
+        line-height: 35px;
+        padding-left: 15px;
+        border-radius: 20px;
+      }
+
+      p {
+        color: var(--primary-color);
+        font-size: 13px;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      span {
+        color: var(--secondary-color);
+        font-size: 12px;
+      }
+
+      button {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        line-height: 35px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-weight: 600;
+        font-family: var(--font-title);
+        width: 250px;
+        cursor: pointer;
+      }
+      .login--icons {
+        color: var(--primary-color);
+        cursor: pointer;
+       
+      }
+      .login--detail-grid{
+        gap: 10px;
+      }
+    }
+  }
+}

@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import './App.css'
+import "./App.scss";
+
+import { LogIn } from "./pages";
 
 function App() {
-
   return (
-    <>
-      
-    </>
-  )
+    <main className="app">
+      <LogIn />
+    </main>
+  );
 }
 
-export default App
+export default App;
